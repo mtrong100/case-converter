@@ -1,80 +1,133 @@
 <!DOCTYPE html>
 <html lang="vi" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Công cụ chuyển đổi kiểu chữ trực tuyến miễn phí - Chuyển đổi giữa các kiểu chữ như viết hoa, viết thường, viết hoa đầu từ và nhiều hơn nữa">
-    <meta name="keywords" content="case converter, text converter, uppercase, lowercase, capitalize, text tool">
-    <meta name="author" content="Case Converter App">
-    <link rel="icon" href="/favicon.png" type="image/x-icon" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Công cụ chuyển đổi kiểu chữ trực tuyến miễn phí - Chuyển đổi giữa các kiểu chữ như viết hoa, viết thường, viết hoa đầu từ và nhiều hơn nữa"
+    />
+    <meta
+      name="keywords"
+      content="case converter, text converter, uppercase, lowercase, capitalize, text tool"
+    />
+    <meta name="author" content="Case Converter App" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
     <title>Case Converter - Công cụ chuyển đổi kiểu chữ</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <h1 data-aos="fade-down"><i class="fas fa-exchange-alt"></i> Case Converter</h1>
-            <p data-aos="fade-down" data-aos-delay="100">Công cụ chuyển đổi kiểu chữ mạnh mẽ</p>
-            <div class="theme-toggle" data-aos="fade-down" data-aos-delay="200">
-                <button id="themeBtn"><i class="fas fa-moon"></i></button>
-            </div>
-        </header>
+      <header>
+        <h1 data-aos="fade-down">
+          <i class="fas fa-exchange-alt"></i> Case Converter
+        </h1>
+        <p data-aos="fade-down" data-aos-delay="100">
+          Công cụ chuyển đổi kiểu chữ mạnh mẽ
+        </p>
+        <div class="theme-toggle" data-aos="fade-down" data-aos-delay="200">
+          <button id="themeBtn"><i class="fas fa-moon"></i></button>
+        </div>
+      </header>
 
-        <main>
-            <section class="input-section" data-aos="fade-up">
-                <textarea id="inputText" placeholder="Nhập hoặc dán văn bản của bạn vào đây..."></textarea>
-                <div class="action-buttons">
-                    <button id="clearBtn"><i class="fas fa-trash-alt"></i> Xóa</button>
-                    <button id="pasteBtn"><i class="fas fa-paste"></i> Dán</button>
-                    <button id="copyInputBtn"><i class="fas fa-copy"></i> Sao chép</button>
-                </div>
-            </section>
+      <main>
+        <section class="input-section" data-aos="fade-up">
+          <textarea
+            id="inputText"
+            placeholder="Nhập hoặc dán văn bản của bạn vào đây..."
+          ></textarea>
+          <div class="action-buttons">
+            <button id="clearBtn"><i class="fas fa-trash-alt"></i> Xóa</button>
+            <button id="pasteBtn"><i class="fas fa-paste"></i> Dán</button>
+            <button id="copyInputBtn">
+              <i class="fas fa-copy"></i> Sao chép
+            </button>
+          </div>
+        </section>
 
-            <section class="controls" data-aos="fade-up" data-aos-delay="100">
-                <div class="basic-controls">
-                    <button id="upperCaseBtn"><i class="fas fa-text-height"></i> VIẾT HOA</button>
-                    <button id="lowerCaseBtn"><i class="fas fa-text-width"></i> viết thường</button>
-                    <button id="capitalizeBtn"><i class="fas fa-paragraph"></i> Viết Hoa Đầu Từ</button>
-                    <button id="sentenceCaseBtn"><i class="fas fa-font"></i> Viết hoa đầu câu</button>
-                </div>
-                <div class="advanced-controls">
-                    <button id="invertCaseBtn"><i class="fas fa-random"></i> ĐảO NgƯợC Chữ</button>
-                    <button id="alternatingCaseBtn"><i class="fas fa-wave-square"></i> vIẾt hOa lẪn tHƯỜng</button>
-                    <button id="titleCaseBtn"><i class="fas fa-heading"></i> Viết Hoa Tiêu Đề</button>
-                    <button id="slugCaseBtn"><i class="fas fa-link"></i> chuyen-thanh-slug</button>
-                </div>
-            </section>
+        <section class="controls" data-aos="fade-up" data-aos-delay="100">
+          <div class="basic-controls">
+            <button id="upperCaseBtn">
+              <i class="fas fa-text-height"></i> VIẾT HOA
+            </button>
+            <button id="lowerCaseBtn">
+              <i class="fas fa-text-width"></i> viết thường
+            </button>
+            <button id="capitalizeBtn">
+              <i class="fas fa-paragraph"></i> Viết Hoa Đầu Từ
+            </button>
+            <button id="sentenceCaseBtn">
+              <i class="fas fa-font"></i> Viết hoa đầu câu
+            </button>
+          </div>
+          <div class="advanced-controls">
+            <button id="invertCaseBtn">
+              <i class="fas fa-random"></i> ĐảO NgƯợC Chữ
+            </button>
+            <button id="alternatingCaseBtn">
+              <i class="fas fa-wave-square"></i> vIẾt hOa lẪn tHƯỜng
+            </button>
+            <button id="titleCaseBtn">
+              <i class="fas fa-heading"></i> Viết Hoa Tiêu Đề
+            </button>
+            <button id="slugCaseBtn">
+              <i class="fas fa-link"></i> chuyen-thanh-slug
+            </button>
+          </div>
+        </section>
 
-            <section class="output-section" data-aos="fade-up" data-aos-delay="200">
-                <textarea id="outputText" placeholder="Kết quả sẽ hiển thị ở đây..." readonly></textarea>
-                <div class="action-buttons">
-                    <button id="copyOutputBtn"><i class="fas fa-copy"></i> Sao chép</button>
-                    <button id="saveBtn"><i class="fas fa-save"></i> Lưu vào lịch sử</button>
-                </div>
-            </section>
+        <section class="output-section" data-aos="fade-up" data-aos-delay="200">
+          <textarea
+            id="outputText"
+            placeholder="Kết quả sẽ hiển thị ở đây..."
+            readonly
+          ></textarea>
+          <div class="action-buttons">
+            <button id="copyOutputBtn">
+              <i class="fas fa-copy"></i> Sao chép
+            </button>
+            <button id="saveBtn">
+              <i class="fas fa-save"></i> Lưu vào lịch sử
+            </button>
+          </div>
+        </section>
 
-            <section class="history-section" data-aos="fade-up" data-aos-delay="300">
-                <div class="section-header">
-                    <h2><i class="fas fa-history"></i> Lịch sử chuyển đổi</h2>
-                    <button id="clearHistoryBtn"><i class="fas fa-trash"></i> Xóa lịch sử</button>
-                </div>
-                <div id="historyList" class="history-list">
-                    <!-- Lịch sử sẽ được thêm vào đây bằng JavaScript -->
-                </div>
-            </section>
-        </main>
+        <section
+          class="history-section"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div class="section-header">
+            <h2><i class="fas fa-history"></i> Lịch sử chuyển đổi</h2>
+            <button id="clearHistoryBtn">
+              <i class="fas fa-trash"></i> Xóa lịch sử
+            </button>
+          </div>
+          <div id="historyList" class="history-list">
+            <!-- Lịch sử sẽ được thêm vào đây bằng JavaScript -->
+          </div>
+        </section>
+      </main>
 
-        <footer>
-            <p>© 2024 Case Converter App | Made with <i class="fas fa-heart"></i></p>
-        </footer>
+      <footer>
+        <p>
+          © 2024 Case Converter App | Made with <i class="fas fa-heart"></i>
+        </p>
+      </footer>
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
