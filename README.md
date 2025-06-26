@@ -1,12 +1,13 @@
 # Case Converter Web App
 
-![Case Converter Screenshot](./screenshot.png)
+![Case Converter Screenshot](./Screenshot.png)
 
 Một ứng dụng web chuyển đổi kiểu chữ (case converter) với nhiều tính năng hữu ích, giao diện hiện đại và hỗ trợ chế độ sáng/tối.
 
 ## Tính năng chính
 
 - Chuyển đổi giữa các kiểu chữ khác nhau:
+
   - VIẾT HOA TẤT CẢ
   - viết thường tất cả
   - Viết Hoa Đầu Từ
@@ -17,6 +18,7 @@ Một ứng dụng web chuyển đổi kiểu chữ (case converter) với nhi�
   - Chuyển thành slug (dạng-url)
 
 - Hỗ trợ các thao tác với văn bản:
+
   - Xóa nội dung
   - Dán từ clipboard
   - Sao chép kết quả
@@ -45,6 +47,7 @@ Một ứng dụng web chuyển đổi kiểu chữ (case converter) với nhi�
 ## Tương thích
 
 Ứng dụng hoạt động tốt trên các trình duyệt hiện đại:
+
 - Chrome
 - Firefox
 - Edge
